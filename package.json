@@ -1,4 +1,8 @@
 {
+  "name": "expo-razzle-react-primitives-starter",
+  "version": "0.0.1-dev",
+  "license": "MIT",
+  "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -13,6 +17,5 @@
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
-  },
-  "private": true
+  }
 }
