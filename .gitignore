@@ -1,7 +1,14 @@
-node_modules/**/*
 .expo/*
-npm-debug.*
+
+.*.swp
+
 *.jks
 *.p12
 *.key
 *.mobileprovision
+
+node_modules
+npm-debug.*
+yarn-error.log
+package-lock.json
+yarn.lock
