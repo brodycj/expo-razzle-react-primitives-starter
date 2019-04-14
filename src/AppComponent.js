@@ -1,7 +1,11 @@
-import React from 'react';
+// originally based on expo-template-blank
+
+/** @jsx h */
+import { createElement as h, Component } from 'react';
+
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class App extends React.Component {
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
