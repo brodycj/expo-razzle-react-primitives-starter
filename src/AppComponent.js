@@ -10,6 +10,10 @@ import Input from 'react-primitives-input';
 const Input2 = require('react-primitives-input')
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { textLength: 0 };
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -18,7 +22,9 @@ class App extends Component {
           type='text'
           style={{ height: 48 }}
           placeholder='Enter text here'
+          onChangeText={(text) => this.setState({ textLength:text.length })}
         />
+        <Text>First input length: { this.state.textLength }</Text>
         <Input2
           style={{ height: 48 }}
           placeholder='Enter text here'
