@@ -16,20 +16,20 @@ class App extends Component {
         <Text>Input primitive component test</Text>
         <Input
           type='text'
-          style={{height: 48}}
+          style={{ height: 48 }}
           placeholder='Enter text here'
         />
         <Input2
-          style={{height: 48}}
+          style={{ height: 48 }}
           placeholder='Enter text here'
         />
         <Input
-          style={{height: 48}}
+          style={{ height: 48 }}
           placeholder='Enter text here'
         />
         <Input
           type='bogus'
-          style={{height: 48}}
+          style={{ height: 48 }}
           placeholder='Enter text here'
         />
       </View>
