@@ -7,6 +7,9 @@
 *.key
 *.mobileprovision
 
+# Razzle artifacts
+build
+
 node_modules
 npm-debug.*
 yarn-error.log
