@@ -5,11 +5,14 @@
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
+    "eject": "echo 'not supported - do expo eject to convert to React Native' && exit 1",
+    "start": "echo 'use start-web or start-expo' && exit 1",
+    "start-android": "expo start --android",
+    "start-expo": "expo start",
+    "start-ios": "expo start --ios",
     "start-razzle": "razzle start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "eject": "expo eject"
+    "start-web": "npm run start-razzle",
+    "test": "echo 'automatic test not supported' && exit 1"
   },
   "dependencies": {
     "expo": "^32.0.0",
