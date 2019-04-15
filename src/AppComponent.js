@@ -9,6 +9,8 @@ import Input from 'react-primitives-input';
 
 const Input2 = require('react-primitives-input')
 
+const ScrollView = require('react-primitives-scrollview')
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +18,10 @@ class App extends Component {
   }
   render() {
     return (
+      <ScrollView>
       <View style={styles.container}>
+        <Text>☆ ☆ ☆</Text>
+        <Text>☆ ☆ ☆</Text>
         <Text>Input primitive component test</Text>
         <Input
           type='text'
@@ -38,7 +43,15 @@ class App extends Component {
           style={{ height: 48 }}
           placeholder='Enter text here'
         />
+        {
+          // THANKS for GUIDANCE:
+          // https://ariya.io/2013/07/sequences-using-javascript-array
+          Array(50).fill(1).map((v, index) => (
+            <Text key={index}>Extra row number {index+1}</Text>
+          ))
+        }
       </View>
+      </ScrollView>
     );
   }
 }
