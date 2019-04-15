@@ -10,6 +10,11 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
+        <View style={styles.container}>
+          <div>** some div text</div>
+          <Text>Another Text element</Text>
+          <div>** some more div text</div>
+        </View>
       </View>
     );
   }
