@@ -3,7 +3,12 @@
 /** @jsx h */
 import { createElement as h, Component } from 'react';
 
-import { ScrollView, Text, View } from 'react-universal-xp';
+import {
+  ScrollView,
+  Text,
+  TouchableWithoutFeedback as Touchable,
+  View
+} from 'react-universal-xp';
 
 import Input from 'react-primitives-input';
 
@@ -12,7 +17,7 @@ const Input2 = require('react-primitives-input')
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { textLength: 0 };
+    this.state = { textLength: 0, touchCount: 0 };
   }
   render() {
     return (
@@ -28,6 +33,14 @@ class App extends Component {
           onChangeText={(text) => this.setState({ textLength:text.length })}
         />
         <Text>First input length: { this.state.textLength }</Text>
+        <Touchable
+          onPress={() => this.setState({ touchCount: this.state.touchCount+1 })}
+        >
+          <View style={{backgroundColor: 'tan'}}>
+            <Text style={{color: 'purple', padding:10}}>Press me</Text>
+          </View>
+        </Touchable>
+        <Text>Touch press count: { this.state.touchCount}</Text>
         <Input2
           style={{ height: 48 }}
           placeholder='Enter text here'
