@@ -3,13 +3,11 @@
 /** @jsx h */
 import { createElement as h, Component } from 'react';
 
-import { StyleSheet, Text, View } from 'react-universal-xp';
+import { ScrollView, StyleSheet, Text, View } from 'react-universal-xp';
 
 import Input from 'react-primitives-input';
 
 const Input2 = require('react-primitives-input')
-
-const ScrollView = require('react-primitives-scrollview')
 
 class App extends Component {
   constructor(props) {
