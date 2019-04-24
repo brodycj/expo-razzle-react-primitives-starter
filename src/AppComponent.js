@@ -3,7 +3,7 @@
 /** @jsx h */
 import { createElement as h, Component } from 'react';
 
-import { ScrollView, StyleSheet, Text, View } from 'react-universal-xp';
+import { ScrollView, Text, View } from 'react-universal-xp';
 
 import Input from 'react-primitives-input';
 
@@ -54,13 +54,13 @@ class App extends Component {
   }
 }
 
-const styles = StyleSheet.create({
+const styles = {
   container: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+}
 
 export default App;
