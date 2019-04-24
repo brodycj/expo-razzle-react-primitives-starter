@@ -4,15 +4,14 @@
 import { createElement as h, Component } from 'react';
 
 import {
+  Input,
   ScrollView,
   Text,
-  TouchableWithoutFeedback as Touchable,
+  Touchable,
   View
-} from 'react-universal-xp';
+} from 'react-primitives-core';
 
-import Input from 'react-primitives-input';
-
-const Input2 = require('react-primitives-input')
+const Input2 = require('react-primitives-core').Input
 
 class App extends Component {
   constructor(props) {
