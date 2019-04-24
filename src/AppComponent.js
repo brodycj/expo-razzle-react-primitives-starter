@@ -3,7 +3,7 @@
 /** @jsx h */
 import { createElement as h, Component } from 'react';
 
-import { StyleSheet, Text, View } from 'react-primitives';
+import { StyleSheet, Text, View } from 'react-universal-xp';
 
 export default class App extends Component {
   render() {
